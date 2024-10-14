@@ -6,3 +6,6 @@ J'ai fait les exercices pipelines. J'ai rencontré deux difficultés lors de ces
 Cette ligne doit rester après correction
 Pour récupérer l'identifiant SHA du commit "I AM ERROR", j'ai utilisé la commande `git log`. J'ai ensuite utilisé la commande `git revert` pour défaire le commit.
 Ajout d'une ligne à mettre de côté
+Commande `git stash push -m "Conservation des changements séance 3"` pour mettre les modifications de côté
+Commande `git stash list` pour voir la liste des changements conservés
+Commande `git stash pop` 
