@@ -1,0 +1,43 @@
+   1 63
+   1 65 rue d'Aubagne
+   1 Aubagne
+   1 Azerbaïdjan
+   1 Estonie
+   1 Fos-sur-Mer
+   1 Frontignan
+   1 Hauts-de-France
+   1 Hongrie
+   1 Italie
+   1 La Rochelle
+   1 Lavéra
+   1 Lespinasse
+   1 Lettonie
+   1 Los Angeles
+   1 Martigues
+   1 Noailles
+   1 Pallice
+   1 Paradise
+   1 Paris
+   1 Pont-de-Beauvoisin
+   1 Portes-lès-Valence
+   1 Rennes
+   1 Riga
+   1 Saint-Dizier
+   1 Savoie
+   1 Seine-et-Marne
+   1 Sofia
+   1 Tallinn
+   1 Tokyo
+   1 Toulouse
+   1 Vancouver
+   1 Vern-sur-Seiche
+   1 Yokohama
+   1 palais des sports d’hiver de Sofia
+   2 Bulgarie
+   2 Canada
+   2 Marseille
+   3 États-Unis
+   4 Californie
+   5 Japon
+   8 Russie
+  11 France

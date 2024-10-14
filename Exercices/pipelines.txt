@@ -1,0 +1,37 @@
+Exercice 1
+
+1.a
+
+echo "Annotations en 2016 :" > ../../../PPE1-2024/Exercices/comptes.txt
+cat 2016/* | wc -l >> ../../../PPE1-2024/Exercices/comptes.txt
+echo "Annotations en 2018 :" >> ../../../PPE1-2024/Exercices/comptes.txt
+cat 2018/* | wc -l >> ../../../PPE1-2024/Exercices/comptes.txt
+echo "Annotations en 2017 :" >> ../../../PPE1-2024/Exercices/comptes.txt
+cat 2017/* | wc -l >> ../../../PPE1-2024/Exercices/comptes.txt
+
+1.b
+
+echo "Annotations de lieux en 2016 :" >> ../../../PPE1-2024/Exercices/locations.txt
+grep -E "Location" 2016/* | wc -l >> ../../../PPE1-2024/Exercices/locations.txt
+echo "Annotations de lieux en 2018 :" >> ../../../PPE1-2024/Exercices/locations.txt
+grep -E "Location" 2018/* | wc -l >> ../../../PPE1-2024/Exercices/locations.txt
+echo "Annotations de lieux en 2017 :" >> ../../../PPE1-2024/Exercices/locations.txt
+grep -E "Location" 2017/* | wc -l >> ../../../PPE1-2024/Exercices/locations.txt
+
+Exercice 2
+
+2.a
+
+grep -E "Location" 2016/* | cut -f 3 > ../../../PPE1-2024/Exercices/classement_2016_1.txt
+sort classement_2016_1.txt | uniq -c | sort > classement_2016.txt
+grep -E "Location" ~/Cours/2024\ -\ 2025/Semestre\ 1/Programmation\ et\ projet\ encadré/Seance\ 1/Exercice1/ann/2017/* | cut -f 3 > ~/Cours/2024\ -\ 2025/Semestre\ 1/Programmation\ et\ projet\ encadré/PPE1-2024/Exercices/classement_2017_1.txt
+sort classement_2017_1.txt | uniq -c | sort > classement_2017.txt
+grep -E "Location" ~/Cours/2024\ -\ 2025/Semestre\ 1/Programmation\ et\ projet\ encadré/Seance\ 1/Exercice1/ann/2018/* | cut -f 3 > ~/Cours/2024\ -\ 2025/Semestre\ 1/Programmation\ et\ projet\ encadré/PPE1-2024/Exercices/classement_2018_1.txt
+sort classement_2018_1.txt | uniq -c | sort > classement_2018.txt
+
+2.b
+
+Si on choisit le mois de novembre 2018 :
+grep -E "Location" ~/Cours/2024\ -\ 2025/Semestre\ 1/Programmation\ et\ projet\ encadré/Seance\ 1/Exercice1/ann/2018/2018_11_* | cut -f 3 > ~/Cours/2024\ -\ 2025/Semestre\ 1/Programmation\ et\ projet\ encadré/PPE1-2024/Exercices/classement_2018_2.txt
+sort classement_2018_2.txt | uniq -c | sort > classement_2018_11.txt
+
