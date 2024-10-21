@@ -3,6 +3,12 @@
 TYPE=$1
 ANNEE="2016"
 
+if [[ -z "$TYPE" ]]
+then
+	echo "Vous n'avez pas entré de type"
+	exit
+fi
+
 echo "Annotations de $TYPE en $ANNEE :"
 ./compte_par_type.sh $TYPE $ANNEE
 
