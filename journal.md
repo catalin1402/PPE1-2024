@@ -8,4 +8,12 @@ Pour récupérer l'identifiant SHA du commit "I AM ERROR", j'ai utilisé la comm
 Ajout d'une ligne à mettre de côté
 Commande `git stash push -m "Conservation des changements séance 3"` pour mettre les modifications de côté
 Commande `git stash list` pour voir la liste des changements conservés
-Commande `git stash pop` 
+Commande `git stash pop`
+## Seance 4
+Lors de la réalisation de la première question de la feuille d'exercices sur les scripts j'ai rencontré l'erreur suivante après l'exécution du script : "/usr/bin/bash: bad interpreter: No such file or directory". Après quelques recherches sur internet j'ai découvert que je pouvais vérifier l'emplacement de bash sur ma mashine grace à la commande `which bash`, ainsi j'ai pu trouver l'emplacement de bash "/bin/bash" et modifier le shebang de mon script.
+J'ai également rencontré un problème au cours de l'exercice 3. Le script compte_par_type.sh ne donnait pas le résultat attendu après l'ajout de la vérification de l'argument ANNEE, le script s'arrêtait alors que l'argument était correct. J'ai donc dû modifier l'écriture du chemin absolu en ajoutant $HOME au lieu du tilde et en supprimant les antislash qui servaient à échapper les espaces dans les noms des répertoires.
+
+Code de la dernière diapo :
+Ce script vérifie qu'un argument a été saisi lors de son exécution avec une première condition IF, si aucun argument n'a été saisi il renvoie un message d'erreur et s'arrête.
+Il prend en argument un fichier et avec une boucle WHILE il parcourt les lignes du fichier et vérifie si chaque ligne correspond à une URL valide grace à un IF et une expression régulière. Si l'URL est valide, un message qui indique la validité est affiché et la valeur d'une variable comptant les lignes valides est incrémentée. Si l'URL n'est pas valide, un message qui indique la non-validité est affiché et la valeur d'une variable comptant les lignes non-valides est incrémentée.
+Un dernier message est affiché pour indiquer le nombre de lignes valides et le nombre de ligne non-valides. 
