@@ -1,4 +1,10 @@
 # Journal de bord du projet encadré
+## Seance 1
+Quelques commandes importantes :
+`cd` : pour se déplacer dans l'arborescence
+`ls` : pour afficher le contenu d'un dossier
+`mkdir` : pour créer un dossier
+`mv` : pour déplacer un fichier ou un dossier
 ## Seance 2
 J'ai créé mon dépôt PPE1-2024 depuis GitHub. Puis, j'ai créé un dossier pour la copie locale du dépôt git à l'aide de la commande *git clone*. J'ai ensuite créé mon journal de bord et j'ai utilisé la commande *ls* pour voir le contenu de mon dépôt sur ma machine. J'ai remarqué que mon journal de bord n'y apparaissait pas, j'ai donc utilisé la commande *git pull* afin de récupérer les changements du dépôt sur ma machine et j'ai observé l'apparition du mon fichier *journal.md* sur ma machine.
 ## Seance 3 - correction d'erreurs
@@ -16,4 +22,6 @@ J'ai également rencontré un problème au cours de l'exercice 3. Le script comp
 Code de la dernière diapo :
 Ce script vérifie qu'un argument a été saisi lors de son exécution avec une première condition IF, si aucun argument n'a été saisi il renvoie un message d'erreur et s'arrête.
 Il prend en argument un fichier et avec une boucle WHILE il parcourt les lignes du fichier et vérifie si chaque ligne correspond à une URL valide grace à un IF et une expression régulière. Si l'URL est valide, un message qui indique la validité est affiché et la valeur d'une variable comptant les lignes valides est incrémentée. Si l'URL n'est pas valide, un message qui indique la non-validité est affiché et la valeur d'une variable comptant les lignes non-valides est incrémentée.
-Un dernier message est affiché pour indiquer le nombre de lignes valides et le nombre de ligne non-valides. 
+Un dernier message est affiché pour indiquer le nombre de lignes valides et le nombre de ligne non-valides.
+## Seance 5
+J'ai modifié les scripts de la semaine dernière en remplaçant les chemins absolus par des chemins relatifs. J'ai créé un dépôt GitHub pour le groupe et j'ai ajouté le lien de ce dépôt dans le fichier README de mon dépôt personnel. 
