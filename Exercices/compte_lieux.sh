@@ -4,7 +4,7 @@ ANNEE=$1
 MOIS=$2
 NOMBRE=$3
 
-if [ ! -d "$HOME/Cours/2024 - 2025/Semestre 1/Programmation et projet encadré/Seance 1/Exercice1/ann/$ANNEE/" ]
+if [ ! -d "$ANNEE/" ]
 then
 	echo "Le dossier $ANNEE n'existe pas"
 	exit
@@ -28,4 +28,4 @@ then
 	exit
 fi
 
-grep -E "Location" ~/Cours/2024\ -\ 2025/Semestre\ 1/Programmation\ et\ projet\ encadré/Seance\ 1/Exercice1/ann/$ANNEE/$ANNEE_$MOIS_*.ann | cut -f 3 | sort | uniq -c | sort -n | tail -n $NOMBRE
+grep -E "Location" $ANNEE/$ANNEE_$MOIS_*.ann | cut -f 3 | sort | uniq -c | sort -n | tail -n $NOMBRE
