@@ -37,3 +37,5 @@ Exercice 2
 3. On utilise la commande `wc` avec l’option `-w` pour compter les mots de chaque page.
 ## Seance 7
 J'ai modifié le script dans le fichier miniprojet.sh pour transformer la sortie au format HTML en ajoutant différentes balises.
+## Seance 8
+J'ai ajouté un fichier index.html qui correspond à une page web qui présente le miniprojet. J'ai modifié le script afin que la page du tableau s'affiche avec un CSS.
